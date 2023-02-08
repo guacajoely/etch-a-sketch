@@ -1,8 +1,17 @@
 let gridContainer = document.getElementById('grid-container')
-let button = document.querySelector("button")
+let clearGrid = document.querySelector("#clear-grid")
+let resizeGrid = document.querySelector("#resize-grid")
+
+//function to clear grid (remove pixelFilled from classList of all divs)
+clearGrid.addEventListener("click", function(){
+
+    let allDivs = document.querySelectorAll('div')
+    allDivs.forEach(id => id.classList.remove('pixelFilled'));
+
+})
 
 //get grid width and height from user via prompt and create grid of div elements using loop
-button.addEventListener("click", function(){
+resizeGrid.addEventListener("click", function(){
 
     let gridWidth = prompt("How many pixels per side? (max 100)");
 
@@ -40,7 +49,7 @@ button.addEventListener("click", function(){
 
 
 //listen for hover event and change div class to pixelFilled when triggered
-let div = document.querySelector("div")
+let div = document.querySelector('div')
 div.addEventListener("mouseover", function(e){
     
     //test pixel detection

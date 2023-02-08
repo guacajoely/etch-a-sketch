@@ -14,7 +14,7 @@ body{
 }
 
 .pixel{
-
+    border: solid thin blue;
 }
 
 .pixelFilled{
