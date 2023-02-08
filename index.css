@@ -1,0 +1,28 @@
+#grid-container{
+    margin:auto;
+    border: thin solid black;
+    display: grid;
+    width:800px;
+    height:800px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pixel{
+
+}
+
+.pixelFilled{
+    background-color: black;
+    
+}
+
+button {
+    margin: 20px;
+
+}
