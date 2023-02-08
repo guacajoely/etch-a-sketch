@@ -1,28 +1,23 @@
-#grid-container{
-    margin:auto;
-    border: thin solid black;
-    display: grid;
-    width:800px;
-    height:800px;
-}
-
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.pixel{
-    border: solid thin blue;
+ 
+#grid-container{
+    margin:auto;
+    border: thin solid black;
+    display: grid;
+    width:400px;
+    height:400px;
 }
 
-.pixelFilled{
+.pixel{
     background-color: black;
-    
+    opacity: 0;
 }
 
 button {
     margin: 20px;
-
 }
